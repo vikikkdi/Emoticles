@@ -1,0 +1,235 @@
+#loading {
+    position: absolute; align-self: center; width: 20%; height: 30%; background: url('load.gif') no-repeat center center;
+    margin: -10% 0 0 37%;
+}
+
+#loading2 {
+    position: absolute; align-self: center; width: 20%; height: 30%; background: url('load.gif') no-repeat center center;
+    margin: 10% 0 0 41%;
+}
+
+#body1 {
+	
+	background-image: url("");
+	width: 250px;
+	height: 350px;
+}
+
+#body2 {
+
+	font-family: Helvetica, sans-serif;
+  	font-size:15px;
+}
+
+
+.input{
+
+	vertical-align: middle;
+}
+
+a {
+  text-decoration:none;
+}
+ul.tree, .tree li {
+    list-style: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+.tree ul {
+  display:none;
+}
+
+.tree > li {
+  display:block;
+  background:#eee;
+  margin-bottom:2px;
+}
+
+.tree span {
+  display:block;
+  padding:10px 12px;
+
+}
+
+.icon {
+  display:inline-block;
+}
+
+.tree .hasChildren > .expanded {
+  background:#999;
+}
+
+.tree .hasChildren > .expanded a {
+  color:#fff;
+}
+
+.icon:before {
+  content:"+";
+  display:inline-block;
+  min-width:20px;
+  text-align:center;
+}
+.tree .icon.expanded:before {
+  content:"-";
+}
+
+.show-effect {
+  display:block!important;
+}
+
+
+.button {
+    position: relative;
+    background-color: #1CD1A5;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 170px;
+    text-align: center;
+    -webkit-transition-duration: 10s;
+    transition-duration: 10s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button2 {
+    position: relative;
+    background-color: #1CD1A5;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 110px;
+    text-align: center;
+    -webkit-transition-duration: 10s;
+    transition-duration: 10s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 200%;
+    padding-left: 250%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button2:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 200%;
+    padding-left: 250%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button2:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 10px;
+    left: 52px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+html, a {
+  	background-image: url('demo.png');
+  	background-size: 100%;
+  	color: white !important;
+}
+
+label {
+    background: #3c3d3c !important;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+a {
+  	background: #3c3d3c;
+  	padding: 5px;
+  	border-radius: 3px;
+  	margin: 2px;
+}

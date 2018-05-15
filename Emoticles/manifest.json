@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Emoticles",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs=' 'sha256-nV/biOhDuL3t88sjWxv2C6o+R3Ww23p0BXaAXyiHhNc=' ",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery.min.js", "main1.js", "main2.js"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
